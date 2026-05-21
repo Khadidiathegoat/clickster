@@ -1,13 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>clickster</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>clickster</title>
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col h-screen">
+  <header class="bg-pink-300 text-white italic text-5xl text-center">
+    Cupcake Clicksters
+  </header>
+
+
+  <main class="flex flex-1">
+    <div class="flex-1/6 bg-purple-300 text-white italic">
+      <p id="scoreDisplay">Score</p>
+      <button id="clicker">
+        <img src="/src/assets/Adobe Express - file.png" class="w-1/2">
+
+      </button>
+    </div>
+
+    <div class="flex-1 bg-white text-pink-300 italic">
+      Boosts
+    </div>
+
+    <div class="flex-1/6 bg-blue-300 text-white italic">
+      Store
+    </div>
+
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
